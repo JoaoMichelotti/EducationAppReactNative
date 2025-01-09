@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StatusBar, Image, ScrollView } from "react-native";
+import { View, StatusBar, Image, ScrollView, Text } from "react-native";
 import estilo from "../styles/estilo"
 
 export default function Tela1(props){
@@ -15,6 +15,7 @@ export default function Tela1(props){
                 style={estilo.imgLogin}/>
             </View>
 
+             <Text style={estilo.tituloLogin}>Bem-vindo ao GeeksEdu</Text>
 
             {props.children}
         </ScrollView>

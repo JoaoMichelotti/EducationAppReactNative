@@ -15,9 +15,6 @@ export default function Login(props) {
 
     return(
         <Tela1>
-                
-                <Text style={estilo.tituloLogin}>Bem-vindo ao GeeksEdu</Text>
-
                 <View style={estilo.inputFields}>
 
                     <Text style={{
@@ -47,19 +44,19 @@ export default function Login(props) {
                                     }
                                 }>Enviar</Text>
                     </Pressable>
+                    
+                    <View style={{flexDirection: "row", gap: 2, justifyContent: "center", alignItems: "center"}}>
+                        <Text style={estilo.infoFinal}>
+                            Não possui conta? 
+                        </Text>
 
-                    <Text style={estilo.infoFinal}>
-                        Não possui conta? 
-                        <Text style={{textDecorationLine: "underline",
-                        }}>registrar-se</Text>
-                    </Text>
-
+                        <Pressable onPress={() => props.navigation.navigate("Registrar")}>
+                            <Text style={{textDecorationLine: "underline",
+                            }}>registrar-se</Text>
+                        </Pressable>
+                    </View>
 
                 </View>
         </Tela1>
-
     )
-
-
-
 }
