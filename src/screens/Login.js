@@ -2,15 +2,34 @@ import React, {useState} from "react";
 import { View, Text, TextInput, ScrollView, Pressable } from "react-native";
 import Tela1 from "../components/Tela1";
 import estilo from "../styles/estilo";
+import Entrar from "../functions/Entrar";
 export default function Login(props) {
 
     const [formulario, setFormulario] = useState({
-        usuario: "",
-        senha: ""
+        user: "",
+        pass: ""
     })
 
     function SalvarFormulario() {
 
+        if (formulario.user == "" || formulario.pass == "") {
+
+            alert("Preencha todos os campos!")
+        }
+        else {
+            Entrar(formulario)
+                .then((resultado) => {
+                    if (resultado) {
+                        props.navigation.navigate("Home"); // Navega apenas com login válido
+                    } else {
+                        alert("Credenciais inválidas. Tente novamente.");
+                    }
+                })
+                .catch((erro) => {
+                    console.error("Erro ao tentar salvar formulário:", erro);
+                    alert("Ocorreu um erro. Tente novamente mais tarde.");
+                });
+        }
     }
 
     return(
@@ -22,15 +41,15 @@ export default function Login(props) {
                     }}>Login</Text>
 
                     <TextInput 
-                    onChangeText={ (user) => setFormulario({...formulario, usuario: user})}
+                    onChangeText={ (user) => setFormulario({...formulario, user: user})}
                     placeholder="usuário"
-                    value={formulario.usuario}
+                    value={formulario.user}
                     style={estilo.input}/>
 
                     <TextInput 
-                    onChangeText={ (pass) => setFormulario({...formulario, senha: pass})}
+                    onChangeText={ (pass) => setFormulario({...formulario, pass: pass})}
                     placeholder="senha"
-                    value={formulario.senha}
+                    value={formulario.pass}
                     style={estilo.input}/>
 
                     <Pressable onPress={ SalvarFormulario }
