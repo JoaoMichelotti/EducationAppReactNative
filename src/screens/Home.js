@@ -28,13 +28,20 @@ export default function Home(props) {
             }}>
                 <View>
                     <Text style={{width: 100, fontSize: 20}}>Olá</Text>
-                    <Text style={{fontSize: 22, fontWeight: "bold"}}>{logado}</Text>
+                    <Text style={{fontSize: 22, fontWeight: "bold"}}>{logado}!</Text>
                 </View> 
                 <Image
                 source={require("../../assets/userLogo.png")}
-                style={{width: 50, height: 50}}
+                style={{width: 50, height: 50, borderRadius: 50}}
                 />
             </View>
+
+            <View style={{height: 200, marginTop: 30}}>  
+                <Image
+                source={require("../../assets/Education.jpg")}
+                style={{width: "100%", height: "100%", borderRadius: 10}}/>
+            </View>
+
         </TelasGerais>
       
     )
