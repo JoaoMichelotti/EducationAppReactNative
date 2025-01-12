@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from "react";
 import { ScrollView, View, Text, Image } from "react-native";
-import Entrar from "../functions/Entrar";
+import isLogged from "../functions/isLogged";
+import TelasGerais from "../components/TelasGerais";
 export default function Home(props) {
 
-    const [isLogged, setIsLogged] = useState(null)
-    const [loading, setLoading] = useState(true)
+    const [logado, setIsLogged] = useState("")
     useEffect( () => {
 
-        Entrar().then( (res) => {
+        isLogged().then( (res) => {
 
             if (res) {
                 setIsLogged(res)
@@ -17,13 +17,25 @@ export default function Home(props) {
             }
         })
         .catch((erro) => {
-            props.navigation.navigate("Login")
+            console.log(erro)
         }) 
     }, [])
 
     return(
-        <ScrollView>
-            
-        </ScrollView>
+        <TelasGerais>
+            <View style={{flexDirection: "row", justifyContent: "space-between",
+                alignItems: "center"
+            }}>
+                <View>
+                    <Text style={{width: 100, fontSize: 20}}>Olá</Text>
+                    <Text style={{fontSize: 22, fontWeight: "bold"}}>{logado}</Text>
+                </View> 
+                <Image
+                source={require("../../assets/userLogo.png")}
+                style={{width: 50, height: 50}}
+                />
+            </View>
+        </TelasGerais>
+      
     )
 }

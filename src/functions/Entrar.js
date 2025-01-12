@@ -20,8 +20,8 @@ export default async function Entrar(info) {
                     console.log(info)
 
                     console.log("Login bem-sucedido!");
-
-                    await SecureStore.setItemAsync("userLogged", info.user);
+                    const userCorrigido = JSON.stringify(info.user);
+                    await SecureStore.setItemAsync("userLogged", userCorrigido);
                     
                     return true;
                 }
