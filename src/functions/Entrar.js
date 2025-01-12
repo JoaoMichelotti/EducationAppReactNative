@@ -21,6 +21,8 @@ export default async function Entrar(info) {
 
                     console.log("Login bem-sucedido!");
 
+                    await SecureStore.setItemAsync("userLogged", info.user);
+                    
                     return true;
                 }
             }
