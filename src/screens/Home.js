@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import { ScrollView, View, Text, Image } from "react-native";
 import isLogged from "../functions/isLogged";
 import TelasGerais from "../components/TelasGerais";
+import Slider from "../components/Slider";
 export default function Home(props) {
 
     const [logado, setIsLogged] = useState("")
@@ -41,6 +42,8 @@ export default function Home(props) {
                 source={require("../../assets/Education.jpg")}
                 style={{width: "100%", height: "100%", borderRadius: 10}}/>
             </View>
+
+            <Slider titulo="Cursos em vídeo"/>
 
         </TelasGerais>
       

@@ -37,5 +37,16 @@ export default StyleSheet.create({
     infoFinal: {
         padding: 10,
         marginVertical: 4
+    },
+    sliderTexto: {
+        fontSize: 20,
+        marginTop: 20,
+        marginBottom: 10,
+        fontWeight: "bold"
+    },
+    sliderImg: {
+        width: 300,
+        height: 200,
+        borderRadius: 10
     }
 })
