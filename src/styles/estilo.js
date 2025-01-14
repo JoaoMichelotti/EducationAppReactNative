@@ -45,8 +45,14 @@ export default StyleSheet.create({
         fontWeight: "bold"
     },
     sliderImg: {
-        width: 300,
-        height: 200,
+        width: 250,
+        height: 150,
         borderRadius: 10
+    },
+    sliderBox: {
+        backgroundColor: "#fff",
+        borderRadius: 4,
+        marginRight: 10,
+        elevation: 4
     }
 })

@@ -3,6 +3,7 @@ import { ScrollView, View, Text, Image } from "react-native";
 import isLogged from "../functions/isLogged";
 import TelasGerais from "../components/TelasGerais";
 import Slider from "../components/Slider";
+import dados from "../datas/dadosSlider"
 export default function Home(props) {
 
     const [logado, setIsLogged] = useState("")
@@ -43,7 +44,9 @@ export default function Home(props) {
                 style={{width: "100%", height: "100%", borderRadius: 10}}/>
             </View>
 
-            <Slider titulo="Cursos em vídeo"/>
+            <Slider titulo="Cursos em vídeo" data={dados}/>
+
+            <Slider titulo="Cursos para iniciantes" data={dados} estado={true}/>
 
         </TelasGerais>
       
