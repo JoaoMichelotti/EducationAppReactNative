@@ -4,9 +4,12 @@ import isLogged from "../functions/isLogged";
 import TelasGerais from "../components/TelasGerais";
 import Slider from "../components/Slider";
 import dados from "../datas/dadosSlider"
+import dadosBasic from "../datas/dadosSliderBasic"
+import dadaosAdvanced from "../datas/dadosSliderAdvanced"
 export default function Home(props) {
 
     const [logado, setIsLogged] = useState("")
+
     useEffect( () => {
 
         isLogged().then( (res) => {
@@ -44,9 +47,11 @@ export default function Home(props) {
                 style={{width: "100%", height: "100%", borderRadius: 10}}/>
             </View>
 
-            <Slider titulo="Cursos em vídeo" data={dados}/>
+            <Slider titulo="Cursos em vídeo" data={dados} estado={true} navegacao={props.navigation}/>
 
-            <Slider titulo="Cursos para iniciantes" data={dados} estado={true}/>
+            <Slider titulo="Cursos para iniciantes" data={dadosBasic} estado={true}/>
+
+            <Slider titulo="Cursos avançados" data={dadaosAdvanced} estado={true}/>
 
         </TelasGerais>
       

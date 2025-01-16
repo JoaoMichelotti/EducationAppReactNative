@@ -53,6 +53,5 @@ export default StyleSheet.create({
         backgroundColor: "#fff",
         borderRadius: 4,
         marginRight: 10,
-        elevation: 4
     }
 })
