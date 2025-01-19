@@ -22,6 +22,8 @@ export default function CourseDetails(props) {
                 marginVertical: 10
             }}>Sobre este curso</Text>
 
+            
+
 
 
         </TelasGerais>
