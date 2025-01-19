@@ -49,7 +49,7 @@ export default function Home(props) {
 
             <Slider titulo="Cursos em vídeo" data={dados} estado={true} navegacao={props.navigation}/>
 
-            <Slider titulo="Cursos para iniciantes" data={dadosBasic} estado={true}/>
+            <Slider titulo="Cursos para iniciantes" data={dadosBasic} estado={true} navegacao={props.navigation}/>
 
             <Slider titulo="Cursos avançados" data={dadaosAdvanced} estado={true}/>
 
