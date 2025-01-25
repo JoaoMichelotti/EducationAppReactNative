@@ -8,7 +8,14 @@ export default [
         about: "Esse curso é um introdutório a HTML e CSS, todos os conceitos básicos são explicados.",
         topicos: ["Introdução", "Tabelas", "Formulários",
             "Folhas de Estilo", "Bootstrap", "Portfolio"
-        ]
+        ],
+        Infos:  [
+                {
+                id: "Introdução",
+                
+            
+            },
+                ]
     },
     {
         id: 2,

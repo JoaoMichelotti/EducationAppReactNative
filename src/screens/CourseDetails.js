@@ -1,6 +1,6 @@
 import React from "react";
 import TelasGerais from "../components/TelasGerais";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Pressable } from "react-native";
 import Navigation from "../components/Navigation";
 
 export default function CourseDetails(props) {
@@ -27,14 +27,13 @@ export default function CourseDetails(props) {
             <View style={{marginTop: 50}}>
 
             <Text style={{fontSize: 18, fontWeight: "bold"}}>Conteudos do curso</Text>
-            {topicos ? topicos.map((item) => {
+            {topicos ? topicos.map((item, index) => {
                 return (
-
-                    <Text style={{backgroundColor: "#fff", marginVertical: 8, fontSize: 16, padding: 10, borderRadius: 8, textAlign: "center", elevation: 5}}>{item}</Text>
-
+                    <Pressable key={index} onPress={() => props.navigation.navigate("Lessons", {topico: item})}>
+                        <Text style={{backgroundColor: "#fff", marginVertical: 8, fontSize: 16, padding: 10, borderRadius: 8, textAlign: "center", elevation: 5}}
+                        >{item}</Text>
+                    </Pressable>
                 )
-                
-
             }) : null}
             </View>
 

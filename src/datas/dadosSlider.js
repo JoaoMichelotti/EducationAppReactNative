@@ -5,7 +5,7 @@ export default [
         name: "Python",
         lessons: "Duração de 3 horas",
         by: "by João",
-        about: "esse curso é um introdutório a linguagem de programação python, todos os conceitos básicos são explicados.",
+        about: "Esse curso é um introdutório a linguagem de programação python, todos os conceitos básicos são explicados.",
         video: "https://youtu.be/ix9cRaBkVe0"
     },
     {
@@ -14,7 +14,7 @@ export default [
         name: "HTML/CSS",
         lessons: "Duração de 4 horas",
         by: "by João",
-        about: "esse curso é um introdutório a HTML e CSS, todos os conceitos básicos são explicados.",
+        about: "Esse curso é um introdutório a HTML e CSS, todos os conceitos básicos são explicados.",
         video: "https://youtu.be/HGTJBPNC-Gw"
     }
 ]
