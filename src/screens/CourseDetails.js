@@ -5,7 +5,7 @@ import Navigation from "../components/Navigation";
 
 export default function CourseDetails(props) {
 
-    const {name, source, by, about, topicos} = props.route.params;
+    const {name, source, by, about, topicos, infos} = props.route.params;
 
     return (
         <TelasGerais>

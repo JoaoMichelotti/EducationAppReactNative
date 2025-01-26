@@ -16,7 +16,7 @@ export default function Slider(props) {
     const renderItem = ({ item }) => {
         return (
             <View style={props.estado ? estilo.sliderBox : {marginRight: 10}}>
-                <Pressable onPress={() => props.navegacao.navigate("Details", {name: item.name, source: item.source, by: item.by, about: item.about, video: item.video ? item.video : null, topicos: item.topicos ? item.topicos : null})}>
+                <Pressable onPress={() => props.navegacao.navigate("Details", {name: item.name, source: item.source, by: item.by, about: item.about, video: item.video ? item.video : null, topicos: item.topicos ? item.topicos : null, infos: item.Infos ? item.Infos : null})}>
                     <Image source={item.source} style={ props.estado ? {width: 250, height: 150, borderTopLeftRadius: 4, borderTopRightRadius:4 } : estilo.sliderImg}/>
                     {props.estado ? (
                         <View style={{padding: 10}}>

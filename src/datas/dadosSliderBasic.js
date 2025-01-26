@@ -11,10 +11,12 @@ export default [
         ],
         Infos:  [
                 {
-                id: "Introdução",
-                
-            
-            },
+                introducao: [
+                    require("../../assets/DesenvolvimentoWeb/IntroducaoImg1.png"),
+
+
+                ]
+                }
                 ]
     },
     {
