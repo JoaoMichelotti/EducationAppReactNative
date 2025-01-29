@@ -19,6 +19,7 @@ export default [
                 id: 1,
                 imagens: [
                     require("../../assets/DesenvolvimentoWeb/IntroducaoImg1.png"),
+                    require("../../assets/DesenvolvimentoWeb/IntroducaoImg2.png"),
                 ]
                 }
                 ]
