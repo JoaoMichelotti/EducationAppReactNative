@@ -6,15 +6,19 @@ export default [
         lessons: "15 aulas",
         by: "by João",
         about: "Esse curso é um introdutório a HTML e CSS, todos os conceitos básicos são explicados.",
-        topicos: ["Introdução", "Tabelas", "Formulários",
-            "Folhas de Estilo", "Bootstrap", "Portfolio"
+        topicos: [
+            {id: 1, topico: "Introdução"}, 
+            {id: 2, topico: "Tabelas"}, 
+            {id: 3, topico:"Formulários"},
+            {id: 4, topico :"Folhas de Estilo"},
+            {id: 5, topico:"Bootstrap"}, 
+            {id: 6, topico:"Portfolio"}
         ],
         Infos:  [
                 {
-                introducao: [
+                id: 1,
+                imagens: [
                     require("../../assets/DesenvolvimentoWeb/IntroducaoImg1.png"),
-
-
                 ]
                 }
                 ]
