@@ -20,6 +20,9 @@ export default [
                 imagens: [
                     require("../../assets/DesenvolvimentoWeb/IntroducaoImg1.png"),
                     require("../../assets/DesenvolvimentoWeb/IntroducaoImg2.png"),
+                    require("../../assets/DesenvolvimentoWeb/IntroducaoImg3.png"),
+                    require("../../assets/DesenvolvimentoWeb/IntroducaoImg4.png"),
+                    require("../../assets/DesenvolvimentoWeb/IntroducaoImg5.png"),
                 ]
                 }
                 ]

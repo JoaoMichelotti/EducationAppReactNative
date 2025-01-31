@@ -6,7 +6,7 @@ export default [
         lessons: "Duração de 3 horas",
         by: "by João",
         about: "Esse curso é um introdutório a linguagem de programação python, todos os conceitos básicos são explicados.",
-        video: "https://youtu.be/ix9cRaBkVe0"
+        video: require("../../assets/Videos/PythonBasic.mp4")
     },
     {
         id: 2,

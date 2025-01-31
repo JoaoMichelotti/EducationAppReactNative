@@ -12,7 +12,7 @@ export default function LessonsNavigations(props) {
         <View>
       
             <Navigation navegacao={props.navegacao}/>
-            <View style={{height: 500, width: window.width}}>
+            <View style={{minHeight: 500, width: window.width}}>
                 <View style={{flex: 1}}>
                     <Image source={props.imagens[currentImagem]} style={{ height: "100%", width:"100%", borderRadius: 10}}
                     resizeMode="contain"/>
